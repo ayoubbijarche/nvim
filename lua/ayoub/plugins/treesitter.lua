@@ -1,10 +1,12 @@
 return{
     "nvim-treesitter/nvim-treesitter",
+    
     config = function ()
         require'nvim-treesitter.configs'.setup {
         ensure_installed = { "c", "lua","rust" , "typescript" , "dart"},
         sync_install = false,
         auto_install = true,
+        ensure_installed = { "markdown" , "markdown_inline"},
         highlight = {
             enable = true,
             disable = function(lang, buf)
