@@ -3,7 +3,7 @@ return{
     
     config = function ()
         require'nvim-treesitter.configs'.setup {
-        ensure_installed = { "c", "lua","rust" , "typescript" , "dart"},
+        ensure_installed = { "c", "lua","rust" , "typescript" , "dart" , "tailwindcss"},
         sync_install = false,
         auto_install = true,
         ensure_installed = { "markdown" , "markdown_inline"},
