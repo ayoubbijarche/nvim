@@ -2,4 +2,12 @@ require("gruvbox").setup({
   contrast = "hard",
 })
 
-vim.cmd([[colorscheme gruvbox]])
+require("monokai-pro").setup({
+  day_night = {
+    enable = false, -- turn off by default
+    day_filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
+    night_filter = "ristretto",
+  }
+})
+
+vim.cmd([[colorscheme monokai-pro]])
