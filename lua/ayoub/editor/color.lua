@@ -1,5 +1,5 @@
 require("gruvbox").setup({
-  contrast = "hard",
+  contrast = "Light",
 })
 
 require("monokai-pro").setup({
@@ -10,4 +10,4 @@ require("monokai-pro").setup({
   }
 })
 
-vim.cmd([[colorscheme monokai-pro]])
+vim.cmd([[colorscheme gruvbox]])

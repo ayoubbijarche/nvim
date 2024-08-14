@@ -12,3 +12,17 @@ vim.api.nvim_set_keymap('n' , '<Leader>a', ':terminal<CR>' , { noremap = true, s
 vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope find_files<cr>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope buffers<cr>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>m', ':BufferNext<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>k', ':BufferPrevious<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>p', ':BufferMoveNext<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>o', ':BufferMovePrevious<cr>', { noremap = true, silent = true })
+
+
+
+
+
+
+
+
+
+
