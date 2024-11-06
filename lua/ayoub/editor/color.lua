@@ -1,5 +1,5 @@
 require("gruvbox").setup({
-  contrast = "Light",
+  contrast = "hard",
 })
 
 require("monokai-pro").setup({
@@ -9,5 +9,7 @@ require("monokai-pro").setup({
     night_filter = "ristretto",
   }
 })
+
+--vim.o.background = "light"
 
 vim.cmd([[colorscheme gruvbox]])
