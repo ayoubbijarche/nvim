@@ -32,7 +32,7 @@ return {
   
   
   
-      lspconfig["tsserver"].setup({
+      lspconfig["ts_ls"].setup({
           capabilities = capabilities,
           on_attach = on_attach,
       })
@@ -59,16 +59,12 @@ return {
         capabilities = capabilities,
         on_attach = on_attach,
       })
+
   
-      lspconfig["pyright"].setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
-      })
-  
-      lspconfig["mojo"].setup({
+      lspconfig["jedi_language_server"].setup({
           capabilities = capabilities,
           on_attach = on_attach,
-          filetypes = {"mojo"}
+          filetypes = {"python"}
       })
   
       lspconfig["emmet_ls"].setup({
@@ -90,6 +86,11 @@ return {
           capabilities = capabilities,
           on_attach = on_attach,
       })
+      
+      lspconfig["asm_lsp"].setup({
+          capabilities = capabilities,
+          on_attach = on_attach,
+      })
 
       lspconfig["cssls"].setup({
           capabilities = capabilities,
@@ -101,6 +102,8 @@ return {
           capabilities = capabilities,
           on_attach = on_attach,
       })
+
+
   
   
       lspconfig["lua_ls"].setup({
