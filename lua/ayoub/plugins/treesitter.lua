@@ -8,7 +8,9 @@ return{
         auto_install = true,
         ensure_installed = { "markdown" , "markdown_inline"},
         highlight = {
+            "italic",
             enable = true,
+              
             disable = function(lang, buf)
                 local max_filesize = 100 * 1024
                 local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
@@ -16,6 +18,7 @@ return{
                     return true
                 end
             end,
+
 
 
         additional_vim_regex_highlighting = false,
