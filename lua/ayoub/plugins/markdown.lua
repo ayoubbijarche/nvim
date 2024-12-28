@@ -7,7 +7,7 @@ return{
     config = function()
         require('render-markdown').setup({
 
-
+        latex = {enabled = false},
         heading = {
         -- Turn on / off heading icon & background rendering
         enabled = true,
@@ -187,10 +187,7 @@ return{
     sign = {
         -- Turn on / off sign rendering
         enabled = true,
-        -- More granular mechanism, disable signs within specific buftypes
-        exclude = {
-            buftypes = { 'nofile' },
-        },
+      
         -- Applies to background of sign text
         highlight = 'RenderMarkdownSign',
     },
